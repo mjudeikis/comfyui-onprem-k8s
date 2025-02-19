@@ -23,7 +23,7 @@ cluster-removal:
 
 # Docker - Plain ComfyUI
 docker-build:
-	docker build -t ghcr.io/kmbae/comfyui-onprem-k8s:comfyui-$(COMFYUI_VERSION) \
+	docker build -t ghcr.io/kmbae/comfyui-onprem-k8s:Comfyui-$(COMFYUI_VERSION)-ComfyuiManager-$(COMFYUI_MANAGER_VERSION) \
 		--build-arg COMFYUI_VERSION=$(COMFYUI_VERSION) \
 		--build-arg COMFYUI_MANAGER_VERSION=$(COMFYUI_MANAGER_VERSION) \
 		-f docker/comfyui.Dockerfile .
