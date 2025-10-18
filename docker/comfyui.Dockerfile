@@ -18,7 +18,7 @@ RUN apt-get install -y build-essential curl python3-pip vim htop tmux
 #RUN apt-get install -y python3.10-dev
 
 # torch and xformers
-RUN pip install torch==2.6.0 torchvision==0.21 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu126 
+RUN pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu126 
 #RUN pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --extra-index-url https://download.pytorch.org/whl/cu121
 
 ARG COMFYUI_VERSION
